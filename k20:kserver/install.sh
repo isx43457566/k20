@@ -26,3 +26,4 @@ do
  kadmin.local -q "addprinc -pw $user $user"
 done
 
+
