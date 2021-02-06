@@ -1,4 +1,4 @@
-K20 Kerberos Server
+K20 Kerberos server
 
 @edt ASIX M11-SAd Curs 2020 - 2021
 Autenticació
@@ -11,8 +11,5 @@ Per engegar a dins de AWS:
     obrir els ports al security groups kerberos
     afgir en el client al seu /etc/hosts la IP de AWS
 
-''' docker run --rm --name kserver.edt.org -h kserver.edt.org --net 2hisix -p 88:88 -p 464:749 -p 749:749 -d isx43457566/k20:kserver '''
-
-
-
+docker run --rm --name kserver.edt.org -h kserver.edt.org --net 2hisix -p 88:88 -p 464:464 -p 749:749 -d isx43457566/k20:kserver
 
