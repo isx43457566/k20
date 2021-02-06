@@ -11,4 +11,4 @@ Accedir al kserver de AWS:
 
 ''' A.B.C.D kserver.edt.org kserver '''
 
-''' docker run --rm --name khost.edt.org -h khost.edt.org --net 2hisix -it isx43457566/k20:khost-pam '''
+''' docker run --rm --name khost.edt.org -h khost.edt.org --net 2hisix -it isx43457566/k20:khost-pam-ldap '''
