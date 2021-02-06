@@ -16,7 +16,7 @@ docker run --rm --name ldap.edt.org -h ldap.edt.org --net 2hisix -p 389:389 -d i
 docker run --rm --name kserver.edt.org -h kserver.edt.org -p 749:749 -p 88:88 -p 464:464 --net 2hisix -d isx43457566/k20:kserver
 
 docker run --rm --name khost.edt.org -h khost.edt.org --net 2hisix -it isx43457566/k20:khost-pam-ldap
-'''
+```
 
 ## Teoria
 ### Authenticació
@@ -62,7 +62,7 @@ Es resum, podem verificar l'accés/autenticació d'usuaris locals usant el proto
 ### Fedora 27
 
 Amb Fedora 27 podem configurar fàclment l'autenticació amb autgconfig establint les opcions d'autenticació següents:
-``
+```
 authconfig  --enableshadow --enablelocauthorize --enableldap \
             --ldapserver='ldap.edt.org' --ldapbase='dc=edt,dc=org' \
             --enablekrb5 --krb5kdc='kserver.edt.org' \
