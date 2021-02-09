@@ -19,6 +19,7 @@ kadmin.local -q "addprinc -pw kmarta marta/admin"
 kadmin.local -q "addprinc -pw kpere pere/admin"
 kadmin.local -q "addprinc -pw kpau  pau/admin"
 kadmin.local -q "addprinc -pw ksuper super"
+kadmin.local -q "addprinc -pw kadmin admin"
 
 # Usuaris que s'utilitzaran amb /etc/passwd de IP
 for user in kuser{01..06}
@@ -26,4 +27,5 @@ do
  kadmin.local -q "addprinc -pw $user $user"
 done
 
+kadmin.local -q "addprinc -randkey host/sshd.edt.org"
 
