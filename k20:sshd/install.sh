@@ -10,6 +10,8 @@ bash /opt/docker/auth.sh
 #cp /opt/docker/system-auth /etc/pam.d/system-auth
 /usr/bin/ssh-keygen -A
 cp /opt/docker/sshd_config /etc/ssh/sshd_config
+cp /opt/docker/ssh_config
+
 kadmin -p admin -w admin -q "ktadd -k /etc/krb5.keytab host/sshd.edt.org"
 
 #dnf -y install pam_krb5-2.4.8-6.el7.x86_64.rpm
