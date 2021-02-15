@@ -10,7 +10,7 @@ bash /opt/docker/auth.sh
 #cp /opt/docker/system-auth /etc/pam.d/system-auth
 
 
-#dnf -y install pam_krb5-2.4.8-6.el7.x86_64.rpm
+dnf -y install pam_krb5-2.4.8-6.el7.x86_64.rpm
 
 # crear usuaris local01--03 (IP+AP)
 for user in local01 local02 local03

@@ -14,7 +14,7 @@ cp /opt/docker/ssh_config /etc/ssh/ssh_config
 
 kadmin -p admin -w admin -q "ktadd -k /etc/krb5.keytab host/sshd.edt.org"
 
-#dnf -y install pam_krb5-2.4.8-6.el7.x86_64.rpm
+dnf -y install pam_krb5-2.4.8-6.el7.x86_64.rpm
 
 # crear usuaris local01--03 (IP+AP)
 for user in local01 local02 local03
