@@ -8,7 +8,7 @@ bash /opt/docker/auth.sh
 #cp /opt/docker/nsswitch.conf /etc/nsswitch.conf
 #cp /opt/docker/nslcd.conf /etc/nslcd.conf
 #cp /opt/docker/system-auth /etc/pam.d/system-auth
-
+cp /opt/docker/ssh_config /etc/ssh/ssh_config
 
 dnf -y install pam_krb5-2.4.8-6.el7.x86_64.rpm
 
